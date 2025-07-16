@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cursor-sh/config/main/schema.json",
+  "project": {
+    "name": "SpermAnalyzerAI",
+    "type": "android",
+    "description": "Real offline Android app for sperm analysis using PyTorch Mobile and YOLOv8",
+    "entry": "android-app/app/src/main/java/com/example/spermanalyzer/MainActivity.kt",
+    "android": {
+      "minSdk": 21,
+      "targetSdk": 34,
+      "compileSdk": 34,
+      "applicationId": "com.example.spermanalyzer",
+      "versionCode": 1,
+      "versionName": "1.0.0"
+    },
+    "buildTools": {
+      "gradle": "8.1.0",
+      "agp": "8.1.0"
+    }
+  },
+  "features": {
+    "enableOfflineMode": true,
+    "enforceNoPlaceholders": true,
+    "requireLocalModel": true,
+    "enablePyTorchMobile": true,
+    "enableRealTimeAnalysis": true
+  },
+  "dependencies": {
+    "pytorch": "1.13.1",
+    "torchvision": "0.14.1",
+    "opencv": "4.8.0"
+  },
+  "tasks": [
+    {
+      "name": "build",
+      "run": "./gradlew assembleRelease",
+      "description": "Build release APK"
+    },
+    {
+      "name": "install",
+      "run": "./gradlew installRelease",
+      "description": "Install APK on connected device"
+    },
+    {
+      "name": "test",
+      "run": "./gradlew test",
+      "description": "Run unit tests"
+    }
+  ],
+  "linting": {
+    "enabled": true,
+    "kotlinter": true,
+    "detekt": true
+  },
+  "ai": {
+    "modelPath": "app/src/main/assets/sperm_analyzer.torchscript.pt",
+    "inputSize": [640, 640],
+    "numClasses": 1,
+    "confidenceThreshold": 0.5,
+    "nmsThreshold": 0.4
+  }
+}
