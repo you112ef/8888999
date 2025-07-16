@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="640dp"
+    android:height="640dp"
+    android:viewportWidth="640"
+    android:viewportHeight="640">
+    
+    <!-- Background -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M0,0 L640,0 L640,640 L0,640 Z" />
+    
+    <!-- Sample sperm shapes for demonstration -->
+    <circle
+        android:cx="120"
+        android:cy="150"
+        android:radius="8"
+        android:fillColor="#4CAF50" />
+    
+    <circle
+        android:cx="320"
+        android:cy="280"
+        android:radius="8"
+        android:fillColor="#4CAF50" />
+    
+    <circle
+        android:cx="480"
+        android:cy="180"
+        android:radius="8"
+        android:fillColor="#4CAF50" />
+    
+    <circle
+        android:cx="200"
+        android:cy="380"
+        android:radius="8"
+        android:fillColor="#4CAF50" />
+    
+    <circle
+        android:cx="450"
+        android:cy="420"
+        android:radius="8"
+        android:fillColor="#4CAF50" />
+    
+    <!-- Static sperm -->
+    <circle
+        android:cx="300"
+        android:cy="120"
+        android:radius="6"
+        android:fillColor="#F44336" />
+    
+    <circle
+        android:cx="180"
+        android:cy="500"
+        android:radius="6"
+        android:fillColor="#F44336" />
+    
+</vector>

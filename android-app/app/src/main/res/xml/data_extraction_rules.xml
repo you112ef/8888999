@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude AI model files from cloud backup -->
+        <exclude domain="file" path="sperm_analyzer.torchscript.pt"/>
+    </cloud-backup>
+    <device-transfer>
+        <!-- Allow device transfer of analysis results but not models -->
+        <exclude domain="file" path="sperm_analyzer.torchscript.pt"/>
+    </device-transfer>
+</data-extraction-rules>

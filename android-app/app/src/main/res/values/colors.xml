@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="accent_color">#4CAF50</color>
+    
+    <!-- Button Colors -->
+    <color name="capture_button">#FF9800</color>
+    <color name="analyze_button">#4CAF50</color>
+    
+    <!-- Background Colors -->
+    <color name="camera_background">#F5F5F5</color>
+    <color name="image_background">#FAFAFA</color>
+    <color name="results_background">#E3F2FD</color>
+    <color name="info_background">#F3E5F5</color>
+    <color name="status_background">#E8F5E8</color>
+    
+    <!-- Text Colors -->
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    
+    <!-- Analysis Colors -->
+    <color name="motile_sperm">#4CAF50</color>
+    <color name="static_sperm">#F44336</color>
+    <color name="tracking_box">#2196F3</color>
+    
+    <!-- Standard Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sperm Analyzer AI</string>
+    
+    <!-- Main Activity -->
+    <string name="app_title">🔬 Sperm Analyzer AI</string>
+    <string name="status_ready">✅ AI Model Ready - 100% Offline</string>
+    <string name="status_loading">⏳ Loading AI Model...</string>
+    <string name="status_error">❌ Model Loading Error</string>
+    
+    <!-- Buttons -->
+    <string name="capture_button">📸 Capture</string>
+    <string name="analyze_button">🧬 Analyze</string>
+    <string name="reset_button">🔄 Reset</string>
+    <string name="export_button">📄 Export</string>
+    
+    <!-- Analysis -->
+    <string name="analysis_ready">📊 Ready for analysis...</string>
+    <string name="analysis_processing">⚡ Processing...</string>
+    <string name="analysis_complete">✅ Analysis Complete</string>
+    
+    <!-- CASA Metrics -->
+    <string name="casa_title">📊 CASA Metrics:</string>
+    <string name="vcl_label">• VCL: %.2f μm/s</string>
+    <string name="vsl_label">• VSL: %.2f μm/s</string>
+    <string name="lin_label">• LIN: %.2f%%</string>
+    <string name="mot_label">• MOT: %.2f%%</string>
+    
+    <!-- Detection Results -->
+    <string name="detection_title">🎯 Detection Results:</string>
+    <string name="total_detected">• Total detected: %d</string>
+    <string name="motile_sperm">• Motile sperm: %d</string>
+    <string name="static_sperm">• Static sperm: %d</string>
+    
+    <!-- Technical Info -->
+    <string name="tech_info">⚡ Real-time Processing\n🔄 PyTorch Mobile Inference\n📱 100%% On-Device Analysis\n🚫 No Internet Required</string>
+    
+    <!-- Permissions -->
+    <string name="camera_permission_required">Camera permission is required for sperm analysis</string>
+    <string name="camera_permission_denied">Camera permission denied. Please grant permission in settings.</string>
+    
+    <!-- Errors -->
+    <string name="model_load_error">Error loading AI model: %s</string>
+    <string name="analysis_error">Analysis error: %s</string>
+    <string name="camera_error">Camera initialization error</string>
+    
+    <!-- Success Messages -->
+    <string name="model_loaded_success">AI Model loaded successfully</string>
+    <string name="analysis_success">Analysis completed successfully</string>
+    
+    <!-- Initial Instructions -->
+    <string name="initial_instructions">📊 Ready for analysis...\n\nPress \'Analyze\' to start real-time sperm analysis using YOLOv8 and DeepSORT tracking.\n\n🔬 CASA Metrics will be calculated:\n• VCL (Velocity Curvilinear)\n• VSL (Velocity Straight Line)\n• LIN (Linearity)\n• MOT (Motility %%)</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔬 Sperm Analyzer AI"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/primary_color"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Status indicator -->
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ AI Model Ready - 100% Offline"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textAlignment="center"
+            android:background="@drawable/status_background"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Camera Preview -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/camera_background" />
+
+        <!-- Control Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/captureButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📸 Capture"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/capture_button" />
+
+            <Button
+                android:id="@+id/analyzeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🧬 Analyze"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/analyze_button" />
+
+        </LinearLayout>
+
+        <!-- Analysis Results Image -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter"
+            android:background="@color/image_background"
+            android:contentDescription="Analysis Results" />
+
+        <!-- Analysis Results Text -->
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Ready for analysis...\n\nPress 'Analyze' to start real-time sperm analysis using YOLOv8 and DeepSORT tracking.\n\n🔬 CASA Metrics will be calculated:\n• VCL (Velocity Curvilinear)\n• VSL (Velocity Straight Line)\n• LIN (Linearity)\n• MOT (Motility %)"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:background="@drawable/results_background"
+            android:padding="16dp"
+            android:fontFamily="monospace" />
+
+        <!-- Technical Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ Real-time Processing\n🔄 PyTorch Mobile Inference\n📱 100% On-Device Analysis\n🚫 No Internet Required"
+            android:textSize="12sp"
+            android:textColor="@color/secondary_text"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:background="@drawable/info_background"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>
